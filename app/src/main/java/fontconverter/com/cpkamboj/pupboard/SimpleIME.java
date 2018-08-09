@@ -236,6 +236,7 @@ public class SimpleIME extends InputMethodService
                           editor = sharedpreferences.edit();
                           editor.putString("keyboard", "english_shift");
                           editor.commit();
+
                       }
                       else if(restoredText.equalsIgnoreCase("english_shift"))
                       {
