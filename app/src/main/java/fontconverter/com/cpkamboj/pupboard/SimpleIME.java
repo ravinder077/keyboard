@@ -341,6 +341,15 @@ public class SimpleIME extends InputMethodService
                         ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
                         break;
 
+                     //added for english alt key starts
+                    case 550:
+                        System.err.println("inside alt  550");
+                        keyboard = new Keyboard(this, R.xml.english_alt);
+                        kv.setKeyboard(keyboard);
+                        break;
+
+                     //added for english alt keys ends
+
                     case 44:
 
                         System.err.println("inside shift 456");
